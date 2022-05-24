@@ -1,0 +1,61 @@
+<script>
+    /*
+console.log(infoPazient);
+*/
+    var person ={
+        "SNILS 1": ["Омонов","Сулаймон","Азамат угли", 22, "февраля",1996,"м","исполнено"], 
+        "SNILS 2": ["Омонов","Сулаймон","Викторович", 22, "февраля",2001,"м","медотвод"],
+        "SNILS 3": ["Омонов","Сулаймон","Юрьевич", 22, "февраля",2001,"м","назначено"],
+        };
+        console.log(person);
+       let SNILS;
+       var firstfuncction= function(person, SNILS) {
+           SNILS= prompt ("Введите SNISL пациента" ,SNILS);
+        infoname =person[SNISL];
+        console.log(infoname);
+        alert("Информация о пациенте"+ infona,e);
+        statusPriv=person[SNILS][7];
+       console.log(statusPriv);
+       }
+       SNILS=prompt("Введите SNILS пациента ", SNILS);
+       infoname=person[SNILS];
+       console.log(infoname);
+       alert("Информация о пациенте"+infoname);
+      /* let phase;
+       phase=prompt("Введите действие или медотвод или назначено или исполнено ", phase);
+       infoname.push(phase);
+       console.log(infoname);
+       person[SNILS]=infoname;
+       console.log(person);*/
+       // Извлекаем информацию о текущем сстатусе прививки 
+       statusPriv=person[SNILS][7];
+       console.log(statusPriv);
+       //Проверяем возможность изменения статуса
+       if (statusPriv=== "исполнено") {
+           alert ("Отказано в прививке пациенту"+ inforname);
+       } else if (statusPriv==="медотвод") {
+           alert("отказано в прививке пациенту"+ infoname);
+       } else{
+           alert ("исполнить прививку пациенту"+ infoname);
+       }  
+       lastname=prompt("Введите имя пациента ", lastname);
+    // console.log(lastname);
+    infoPazient[0]=lastname;
+    console.log(infoPazient);
+    let firstname;
+    firstname=prompt("Введите имя пациента ", firstname);
+     // console.log(lastname)
+     infoPazient[1]=firstname;
+     console.log(infoPazient);
+     middlename=prompt("Введите отчество пациента ", middlename);
+     // console.log(lastname);
+    infoPazient[2]=middlename;
+    console.log(infoPazient);
+    let date;
+    date=prompt("Введите дату рождения пациента ", date);
+     // console.log(lastname)
+     infoPazient[3]=date;
+     console.log(infoPazient);
+     person.SNILS4=infoPazient;
+        console.log(person);    
+       </script>
